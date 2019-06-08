@@ -7,7 +7,7 @@
                 v-model="selectedBeverage"
                 v-on:change="$emit('selected', selectedBeverage)">
 
-            <option selected :value="null">Select a beverage</option>
+            <option :value="null" disabled selected>Select a beverage</option>
             <option :value="beverage" v-for="beverage in content">{{beverage.name}}</option>
         </select>
 
