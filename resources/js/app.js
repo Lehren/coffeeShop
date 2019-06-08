@@ -8,6 +8,9 @@ import './bootstrap';
 
 import Vue from 'vue';
 import App from './components/App';
+import Vuetify from "vuetify";
+import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
+import lodashGet from 'lodash/get'
 
 /**
  * The following block of code may be used to automatically register your
@@ -22,6 +25,9 @@ import App from './components/App';
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+
+Vue.use(Vuetify);
+Vue.prototype.$get = lodashGet;
 
 const app = new Vue({
     el: '#app',
