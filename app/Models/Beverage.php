@@ -11,7 +11,7 @@ class Beverage extends Model
 
     protected $appends = [
         'name',
-        'possible_options'
+        'possibleOptions'
     ];
 
     /**
