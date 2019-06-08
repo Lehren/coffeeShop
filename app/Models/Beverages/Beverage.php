@@ -1,11 +1,11 @@
 <?php
 
-namespace App;
+namespace App\Models\Beverages;
 
 use Illuminate\Database\Eloquent\Model;
 
 abstract class Beverage extends Model
 {
-    protected $possibleOptions;
-    protected $name;
+    protected static $possibleOptions;
+    protected static $name;
 }

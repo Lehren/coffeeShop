@@ -1,9 +1,9 @@
 <?php
 
-namespace App;
+namespace App\Models\Beverages\Soup;
 
 
 class VegetableSoup extends Soup
 {
-    //
+    protected static $name = 'vegetable soup';
 }

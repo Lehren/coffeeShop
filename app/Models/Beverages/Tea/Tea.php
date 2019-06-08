@@ -1,10 +1,13 @@
 <?php
 
-namespace App;
+namespace App\Models\Beverages\Tea;
 
-class Tea extends Beverage
+use App\Models\Beverages\Beverage;
+use App\Models\Options\{Milk, Sugar};
+
+abstract class Tea extends Beverage
 {
-    protected $possibleOptions = [
+    protected static $possibleOptions = [
         Milk::class,
         Sugar::class
     ];

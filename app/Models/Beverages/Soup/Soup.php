@@ -1,8 +1,10 @@
 <?php
 
-namespace App;
+namespace App\Models\Beverages\Soup;
+
+use App\Models\Beverages\Beverage;
 
 abstract class Soup extends Beverage
 {
-    protected $name = 'soup';
+    protected static $name = 'soup';
 }
