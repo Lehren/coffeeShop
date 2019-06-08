@@ -11,8 +11,8 @@ class VendingMachine
      */
     public function __construct()
     {
-        $milkOption = new Option('milk');
-        $sugarOption = new Option('sugar');
+        $milkOption = new Option('Milk');
+        $sugarOption = new Option('Sugar');
 
         $blackTea = new Beverage('Black tea', [$milkOption, $sugarOption]);
         $greenTea = new Beverage('Green tea', [$milkOption, $sugarOption]);
@@ -22,16 +22,18 @@ class VendingMachine
         $tomatoSoup = new Beverage('Tomato soup');
 
         $this->contents = [
-            'Soups' => [
+//            'Soups' => [
                 $vegetableSoup,
                 $chickenSoup,
-                $tomatoSoup
-            ],
-            'Teas' => [
+            $tomatoSoup,
+//            ],
+//            'Teas' => [
                 $blackTea,
-                $greenTea
-            ],
+            $greenTea,
+
             $coffee
+//            ],
+//            'Coffee' => $coffee
         ];
     }
 

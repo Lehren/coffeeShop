@@ -20,9 +20,9 @@ class VendingMachineController extends Controller
 
     public function get(Request $request)
     {
-        return response()->json((
-        $this->vendingMachine->getContents()
-        ));
+        return response()->json(
+            $this->vendingMachine->getContents()
+        );
 
 
     }
