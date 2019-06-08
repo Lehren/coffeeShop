@@ -1,7 +1,9 @@
 <template>
     <div class="form-group form-row">
 
-        <label class="col-form-label col-sm-4" for="existingOptionSelect">Change option</label>
+        <label class="col-form-label col-sm-4" for="existingOptionSelect">
+            {{ selectedOption ? 'Change option' : 'Select an option'}}
+        </label>
         <select class="form-control col-sm" id="existingOptionSelect"
                 v-model="selectedOption"
                 @change="onChange"
