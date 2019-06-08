@@ -21,7 +21,10 @@
             </option>
         </select>
 
-        <v-icon v-if="selectedOption" class="col-sm-2">delete</v-icon>
+        <div class="col-sm-2 text-center" v-if="selectedOption">
+            <v-icon @click="$emit('deleted')">delete</v-icon>
+        </div>
+
     </div>
 </template>
 
