@@ -3,7 +3,7 @@
 Made in Vue.js and Laravel, this app simulates a simple vending machine where you 
 can order a selection of beverages.
 
-##Running
+## Running
 
 Run these commands to start the app.
 ```bash
