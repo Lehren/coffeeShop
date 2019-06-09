@@ -16,6 +16,7 @@
             </option>
 
             <option v-for="option in possibleOptions"
+                    :disabled="selectedOption && option.name === selectedOption.name"
                     :value="option">
                 {{option.name}}
             </option>
