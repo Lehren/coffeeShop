@@ -22,18 +22,12 @@ class VendingMachine
         $tomatoSoup = new Beverage('Tomato soup');
 
         $this->contents = [
-//            'Soups' => [
-                $vegetableSoup,
-                $chickenSoup,
+            $vegetableSoup,
+            $chickenSoup,
             $tomatoSoup,
-//            ],
-//            'Teas' => [
-                $blackTea,
+            $blackTea,
             $greenTea,
-
             $coffee
-//            ],
-//            'Coffee' => $coffee
         ];
     }
 
@@ -41,5 +35,4 @@ class VendingMachine
     {
         return $this->contents;
     }
-
 }
