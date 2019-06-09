@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\VendingMachine;
-use Illuminate\Http\Request;
 
 class VendingMachineController extends Controller
 {
@@ -12,20 +11,22 @@ class VendingMachineController extends Controller
 
     /**
      * VendingMachineController constructor.
+     * @param $vendingMachine
      */
-    public function __construct()
+    public function __construct(VendingMachine $vendingMachine)
     {
-        $this->vendingMachine = new VendingMachine();
+        $this->vendingMachine = $vendingMachine;
     }
 
-    public function get(Request $request)
+    public function get()
     {
         return response()->json(
             $this->vendingMachine->getContents()
         );
-
-
     }
 
-
+    public function getView()
+    {
+        return view('coffeeshop');
+    }
 }

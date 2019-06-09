@@ -11,8 +11,4 @@
 |
 */
 
-use Illuminate\Support\Facades\Route;
-
-Route::get('/', function () {
-    return view('coffeeshop');
-});
+Route::get('/', 'VendingMachineController@getView');
